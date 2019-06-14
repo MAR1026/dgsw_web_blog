@@ -1,0 +1,128 @@
+GET http://localhost:8080/api/post/search/2
+Accept: application/json
+
+<> 2019-06-10T010644.200.json
+
+###
+
+GET http://localhost:8080/api/post/search/2
+Accept: application/json
+
+<> 2019-06-10T125140.200.json
+
+###
+
+GET http://localhost:8080/api/post/search/1
+Accept: application/json
+
+<> 2019-06-10T125128.200.json
+
+###
+
+GET http://localhost:8080/api/post/posts
+Accept: application/json
+
+<> 2019-06-04T105026.200.json
+
+###
+
+POST http://localhost:8080/api/post/add
+Content-Type: application/json
+
+{
+  "userId": "1234",
+  "title": "제목3",
+  "content": "내용3"
+}
+
+<> 2019-06-04T105018.200.json
+
+###
+
+POST http://localhost:8080/api/post/add
+Content-Type: application/json
+
+{
+  "userId": "1234",
+  "title": "제목2",
+  "content": "내용2"
+}
+
+<> 2019-06-04T105013.200.json
+
+###
+
+POST http://localhost:8080/api/post/add
+Content-Type: application/json
+
+{
+  "userId": "1234",
+  "title": "제목1",
+  "content": "내용1"
+}
+
+<> 2019-06-04T105006.200.json
+
+###
+
+GET http://localhost:8080/api/user/users
+Accept: application/json
+
+<> 2019-06-04T100500.200.json
+
+###
+
+GET http://localhost:8080/api/board/users
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/board/users
+Accept: application/json
+
+<> 2019-06-03T104923.200.json
+
+###
+
+GET http://localhost:8080/api/board/users
+Accept: application/json
+
+<> 2019-06-03T104742.500.json
+
+###
+
+GET http://localhost:8080/api/board/list
+Accept: application/json
+
+<> 2019-05-14T105703.200.json
+
+###
+
+GET http://localhost:8080/api/board/list
+Accept: application/json
+
+<> 2019-05-14T105644.200.json
+
+###
+
+GET http://localhost:8080
+Accept: application/json
+
+<> 2019-05-14T105310.200.json
+
+###
+
+GET http://localhost:8080
+Accept: application/json
+
+<> 2019-05-14T105154.500.json
+
+###
+
+GET http://localhost:8080
+Accept: application/json
+
+<> 2019-05-14T105128.500.json
+
+###
+

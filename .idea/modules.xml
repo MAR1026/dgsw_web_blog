@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/board_front/board_front.iml" filepath="$PROJECT_DIR$/board_front/board_front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kr.hs.dgsw.board_back.iml" filepath="$PROJECT_DIR$/.idea/modules/kr.hs.dgsw.board_back.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kr.hs.dgsw.board_back.main.iml" filepath="$PROJECT_DIR$/.idea/modules/kr.hs.dgsw.board_back.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kr.hs.dgsw.board_back.test.iml" filepath="$PROJECT_DIR$/.idea/modules/kr.hs.dgsw.board_back.test.iml" />
+    </modules>
+  </component>
+</project>
