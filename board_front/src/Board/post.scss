@@ -1,0 +1,12 @@
+
+
+.post {
+  > div {
+    border-bottom: 1px solid silver;
+  }
+
+  .content {
+    min-height: 50vh;
+    border: 1px solid silver;
+  }
+}
