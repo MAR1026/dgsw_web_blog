@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.hs.dgsw.board_back.Domain.PostMapper">
+
+    <insert id="addWithHashmap" parameterType="HashMap">
+        insert into post(author, title, content)
+        values(#{author}, #{title}, #{content})
+        <selectKey keyProperty="id" resultType="Long">
+            select last_insert_id()
+        </selectKey>
+    </insert>
+
+    <insert id="add" parameterType="kr.hs.dgsw.board_back.Domain.Post">
+        insert into post(author, title, content)
+        values(#{author}, #{title}, #{content})
+        <selectKey keyProperty="id" resultType="Long">
+            select last_insert_id()
+        </selectKey>
+    </insert>
+
+    <update id="modify" parameterType="kr.hs.dgsw.board_back.Domain.Post">
+        update post
+        set title=#{title}, content=#{content}
+        where id=#{id}
+    </update>
+
+    <select id="findById" parameterType="Long" resultType="kr.hs.dgsw.board_back.Domain.Post">
+        select id, title, content, author, created, updated
+        from post
+        where id=#{id}
+    </select>
+
+    <select id="findAll" resultType="HashMap">
+        select id, author, title, content, created, updated
+        from post
+    </select>
+
+    <delete id="deleteById" parameterType="Long">
+        delete from post where id=#{id}
+    </delete>
+
+    <select id="findByUserId" parameterType="Long" resultType="HashMap">
+        select p.id, p.author, u.username, u.account, p.title, p.content, p.created, p.updated
+        from post p left join user u on p.author = u.id
+        where author = #{author}
+    </select>
+
+</mapper>
